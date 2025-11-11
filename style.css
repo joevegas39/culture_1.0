@@ -22,7 +22,7 @@ body {
     grid-template-columns: 1fr 2fr;
     background-color: #0d6991;
     align-items: center;
-    height: 110px;
+    height: 100px;
     padding-left: 5px;
     z-index: 1000;
     position: sticky;
@@ -684,7 +684,7 @@ footer.glow::after {
 }
 
 section {
-  scroll-margin-top: 110px; /* adjust this to your navbar height */
+  scroll-margin-top: 100px; /* adjust this to your navbar height */
 }
 
 /* ================================
@@ -796,3 +796,4 @@ section {
         font-size: 0.9rem;
     }
 }
+
