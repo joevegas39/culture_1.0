@@ -37,25 +37,24 @@
 </nav>
 
 <!-- Banner / Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Welcome to Culture Enterprise</h1>
-        <p>Your gateway to exciting business opportunities!</p>
-        <a href="#contact" class="btn">Get in Touch</a>
-    </div>
+<section class="banner" id="home">
+  <div class="banner-content">
+    <h1>Welcome to Culture Enterprise</h1>
+    <p>Empowering businesses with innovation and growth strategies.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
 </section>
 
 <!-- About Section -->
 <section class="about" id="about">
     <div class="about-overlay">
         <div class="container">
-            <p></p>
-            <p></p>
             <h2>About Us</h2>
-            <p>
-                Culture Enterprise is dedicated to helping businesses grow by providing consultancy, marketing, and networking services. 
-                We connect entrepreneurs with opportunities and provide strategies to boost growth and visibility.
-            </p>
+            <p>At Culture Enterprise, we help businesses grow and thrive in the digital world. We specialize in managing social media platforms, creating engaging content, and driving sales through smart, results-driven marketing strategies. <br>
+            
+              Our team combines creativity with data-driven insights to ensure your brand reaches the right audience, builds meaningful connections, and converts followers into loyal customers. From social media management to targeted advertising and marketing campaigns, we provide solutions that make your business stand out online. <br>
+
+              At Culture Enterprise, your online presence isn’t just managed—it’s optimized for growth, visibility, and success.</p>
         </div>
     </div>
 </section>
@@ -96,27 +95,39 @@
 
 
 <!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="services-overlay">
-            <div class="contact-overlay">
-             <div class="container">
-                 <h2>Contact Us</h2>
-                  <p>Reach out to us via email, phone, or follow us on social media!</p>
-                  <div class="contact-info">
-                    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ephyochieng39@gmail.com&su=Inquiry%20from%20Culture%20Enterprise%20Website&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services."target="_blank"> ephyochieng39@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+254793024365">+254 793024365</a></p>
-                    <p>WhatsApp: <a href="https://wa.me/254793024365?text=Hello%20Culture%20Enterprise%2C%20I%27m%20interested%20in%20your%20services."target="_blank">WhatsApp Us</a></p>
-                 <p>Follow us:</p>
-                 <div class="social">
-                    <a href="https://twitter.com/" target="_blank">Twitter</a> |
-                    <a href="https://facebook.com/" target="_blank">Facebook</a>
-             </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
+  <section class="contact back" id="contact">
+    <div class="contact-overlay">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Reach out to us via email, phone, or follow us on social media!</p>
 
+        <div class="contact-info">
+          <p>Email: 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ephyochieng39@gmail.com&su=Inquiry%20from%20Culture%20Enterprise%20Website&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services." target="_blank">
+              ephyochieng39@gmail.com
+            </a>
+          </p>
+
+          <p>Phone: 
+            <a href="tel:+254793024365">+254 793024365</a>
+          </p>
+
+          <p>WhatsApp: 
+            <a href="https://wa.me/254793024365?text=Hello%20Culture%20Enterprise%2C%20I%27m%20interested%20in%20your%20services." target="_blank">
+              Chat on WhatsApp
+            </a>
+          </p>
+
+          <p>Follow us:</p>
+          <div class="social">
+            <a href="https://twitter.com/@JOE787878787878" target="_blank">Twitter</a> |
+            <a href="https://facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/_joe.vegas_" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <!-- Footer -->
@@ -132,7 +143,7 @@
         <!-- Quick Links -->
         <div class="footer-links">
             <h3>Quick Links</h3>
-            <ul>
+            <ul class='linkss'>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
@@ -145,7 +156,8 @@
             <h3>Contact Us</h3>
             <p>Email: <a href="mailto:ephyochieng39@gmail.com">ephyochieng39@gmail.com</a></p>
             <p>Phone: <a href="tel:+254793024365">+254 793 024 365</a></p>
-            <p>WhatsApp: <a href="https://wa.me/254793024365" target="_blank">Chat Now</a></p>
+            <p>WhatsApp: <a href="https://wa.me/254793024365/?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Culture%20Enterprise!" target="_blank" class="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></p>
+    
         </div>
 
         <!-- Social Media -->
@@ -155,7 +167,7 @@
              <a href="https://facebook.com" target="_blank" ><i class="fab fa-facebook-f" id="fb"></i></a>
              <a href="https://twitter.com/@JOE787878787878" target="_blank" class="twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
              <a href="https://instagram.com/_joe.vegas_" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i> </a>
-            </div>
+             </div>
         </div>
 
     </div>
@@ -171,6 +183,25 @@
     </svg>
 </a>
 
+
+
 <script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".footer-container, .footer-bottom");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
 </body>
 </html>
