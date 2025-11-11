@@ -697,7 +697,8 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;padding-bottom: -29px;
+    color: #fff;
+    padding-bottom: -29px;
 }
 
 .banner::before {
@@ -747,7 +748,7 @@ section {
 @media screen and (max-width: 768px) {
   .banner {
     background: url('images/banner-mobile.jpg') no-repeat center center/cover;
-    height: 85vh;
+    height: 100vh;
   }
 
   .banner::before {
@@ -756,22 +757,18 @@ section {
 
   .banner h1 {
     font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .banner p {
     font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .banner .btn {
     padding: 10px 25px;
     font-size: 0.95rem;
-  }
-}
-
-/* Extra small devices (phones under 480px) */
-@media screen and (max-width: 480px) {
-  .banner {
-    background: linear-gradient(120deg, #b59ce6, #f9c4d2); /* fallback gradient if image is too heavy */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 }
 
