@@ -691,14 +691,15 @@ section {
    BANNER SECTION
 ================================ */
 .banner {
-    background: url('images/image.png')  no-repeat center center/cover  ;
+    background: url('images/image.png')  no-repeat center center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    padding-bottom: -29px;
+    
 }
 
 .banner::before {
@@ -747,16 +748,21 @@ section {
 ================================ */
 @media screen and (max-width: 768px) {
   .banner {
-    background: url('images/banner-mobile.jpg') no-repeat center center/cover;
+    background: url('images/banner-mobile.jpg') no-repeat center center;
     height: 100vh;
+    background-size: cover;
   }
 
   .banner::before {
-    background: rgba(0, 0, 0, 0.55);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);  /* proper dark overlay */
+    z-index: 0;
   }
 
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
   }
 
@@ -773,3 +779,20 @@ section {
 }
 
 
+/* ================================
+   EXTRA SMALL SCREENS (phones <480px)
+================================ */
+@media screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .banner .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
